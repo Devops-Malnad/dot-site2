@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Transition Cards</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 200vh;
+      background: linear-gradient(to bottom, #f7fafc, #e2e8f0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      width: 300px;
+      height: 400px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 20px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .card h1 {
+      font-size: 1.5rem;
+      color: #2d3748;
+    }
+
+    .card p {
+      margin-top: 10px;
+      color: #4a5568;
+      font-size: 1rem;
+    }
+
+    body.scrolled .card {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (min-width: 768px) {
+      body.scrolled .card {
+        transform: scale(1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card" style="transition-delay: 0.1s">
+    <h1>Card 1</h1>
+    <p>Scroll down to see the card transform with shadow color transition.</p>
+  </div>
+  <div class="card" style="transition-delay: 0.3s">
+    <h1>Card 2</h1>
+    <p>Scroll down to see the card transform with shadow color transition.</p>
+  </div>
+  <div class="card" style="transition-delay: 0.5s">
+    <h1>Card 3</h1>
+    <p>Scroll down to see the card transform with shadow color transition.</p>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        document.body.classList.add('scrolled');
+      } else {
+        document.body.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
