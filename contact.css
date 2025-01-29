@@ -100,11 +100,7 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.container:hover{
-    transform: translateY(-10px);
-    background-color: #2c2c2c;
 
-}
 
 .container .contactInfo {
     width: 50%;
@@ -203,7 +199,7 @@
     width: 40%;
     background: repeating-conic-gradient(from var(--a),
             #C4BEB4 0%, #C4BEB4 10%, transparent 10%, transparent 50%);
-    animation: animate 6s linear infinite;
+   
     padding: 60px;
     border-radius: 20px;
     transition: 0.5s;
@@ -221,8 +217,7 @@
     inset: 0;
     background: repeating-conic-gradient(from var(--a),
             #C4BEB4 0%, #C4BEB4 10%, transparent 10%, transparent 50%);
-    animation: animate 6s linear infinite;
-    animation-delay: -1.5s;
+    
     border-radius: 20px;
 
 }
