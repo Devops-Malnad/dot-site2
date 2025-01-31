@@ -7,14 +7,18 @@
 /* navbar */
 
 .navbar {
-    background: #222;
+    background-color: #171717;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     position: relative;
+    transition: background-color 0.3s ease;
+}
+.navbar:hover {
+    background-color: #2c2c2c;
 }
 
 .navbar .logo {
@@ -86,7 +90,7 @@
 .contact .content h2 {
     font-size: 3em;
     color: white;
-    font-weight: 500;
+    font-weight: bold 500;
 }
 
 .container {
