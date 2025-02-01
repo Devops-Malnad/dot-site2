@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     width: 100%;
 }
@@ -25,6 +26,11 @@ body {
     padding: 15px 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #2c2c2c;
 }
 
 .navbar .logo {
@@ -95,6 +101,7 @@ body {
     text-decoration: none;
     background-color: #C4BEB4;
 }
+
 .cards {
     transform-style: preserve-3d;
     transition: transform 0.5s;
@@ -104,41 +111,43 @@ body {
 .cards:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 50px rgba(255, 255, 255, 0.800);
-    border-radius:20px
+    border-radius: 20px
 }
 
 footer {
-background: #C4BEB4;
-padding: 20px 0;
-text-align: center;
+    background: #C4BEB4;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .social-icons {
-display: flex;
-justify-content: center;
-gap: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .social-link {
-display: inline-block;
-width: 40px; 
-height: 40px; 
-overflow: hidden;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
 }
-.mail{
-width: 40px;
-height: 40px !important;
+
+.mail {
+    width: 40px;
+    height: 40px !important;
 }
+
 .social-link img {
-width: 100%;
-height: auto;
-display: block;
-transition: transform 0.3s;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
 
 }
 
 .social-link img:hover {
-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 
@@ -156,7 +165,7 @@ transform: scale(1.2);
         max-height: 0;
         overflow: hidden;
     }
-    
+
     .nav-links.open {
         max-height: 300px;
         z-index: 1000;
@@ -171,11 +180,11 @@ transform: scale(1.2);
     .menu-icon {
         display: flex;
     }
-    
+
     .navbar {
         flex-direction: row;
     }
-    
+
     .workshop-slot {
         width: 100%;
     }
@@ -223,6 +232,7 @@ transform: scale(1.2);
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
 .dropdown {
     position: relative;
 }
