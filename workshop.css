@@ -51,7 +51,12 @@ body {
     font-size: 1.5rem;
 }
 
-
+#workshopHeading{
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5.5rem;
+}
 .menu-icon {
     display: none;
     flex-direction: column;
@@ -113,7 +118,7 @@ body {
 
 .workshop-slot p {
     font-size: 20px;
-    color: #ffffff;
+    color: #080808;
     padding: 0 20px 20px;
 }
 

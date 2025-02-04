@@ -257,7 +257,7 @@
         margin-left: 65px;
         margin-bottom: -34px;
     font-size: 1.5em;
-    color: #fff ;
+    color: #080808 ;
     }
 .container .contactForm form {
     position: relative;
@@ -266,8 +266,9 @@
 
 .container .contactForm form h2 {
     font-size: 2em;
-    color: #fff;
+    color: #171717;
     font-weight: 500;
+    font-weight: bold;
 }
 
 .container .contactForm form .inputBox {
@@ -282,7 +283,7 @@
     left: 64px;
     padding: 50px 0;
     font-size: 1.1em;
-    color: #fafafa;
+    color: #080808;
     pointer-events: none;
     transition: 0.5s;
 }

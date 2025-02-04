@@ -10,6 +10,15 @@ html {
     width: 100%;
 }
 
+#projectHeading{
+        color: white;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 4.8rem;
+        margin: 10px;
+        margin-top: 40px;
+    }
+
 body {
     display: flex;
     flex-direction: column;
