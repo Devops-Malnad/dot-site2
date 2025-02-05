@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const menuIcon = document.getElementById("menu-icon");
   const navLinks = document.getElementById("nav-links");
-
   // let menuIcon = document.getElementById("menu-icon");
 let rotate_1=document.getElementById('rotate_1');
 let rotate_2=document.getElementById('rotate_2');
 let hide_1=document.getElementById('hide_1');
 let hide_2=document.getElementById('hide_2');
-
   menuIcon.addEventListener("click", function () {
       navLinks.classList.toggle("show");
       // console.log(navLinks.classList.value)
@@ -23,9 +21,25 @@ let hide_2=document.getElementById('hide_2');
           hide_1.style.zIndex = "0";
           hide_2.style.zIndex = "0";
       }
-      
   });
 });
+
+ // Auto-sliding image slider
+ const sliders = document.querySelectorAll(".ag-timeline-card_img-box");
+ sliders.forEach((slider) => {
+   let images = slider.querySelectorAll("img");
+   let index = 0;
+
+   function slideImages() {
+     images.forEach(img => img.style.display = "none");
+     images[index].style.display = "block";
+     index = (index + 1) % images.length;
+   }
+
+   slideImages(); // Show the first image
+   setInterval(slideImages, 3000); // Change image every 3 seconds
+ });
+
 
 
 (function ($) {
