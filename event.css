@@ -3,6 +3,7 @@ body {
   padding: 0;
   background: rgb(0, 0, 0);
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -294,7 +295,7 @@ footer {
     url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.ttf) format("truetype"),
     url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.svg#eicon) format("svg");
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 img {
@@ -570,7 +571,7 @@ img {
 
 .ag-timeline-card_desc {
   line-height: 1.45;
-  font-family: fantasy;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #0b0b0b;
 }

@@ -2,9 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
+
 }
 
 /* navbar */
+a{
+    text-decoration: none;
+}
 
 .navbar {
     background-color: #171717;
@@ -17,6 +22,7 @@
     position: relative;
     transition: background-color 0.3s ease;
 }
+
 .navbar:hover {
     background-color: #2c2c2c;
 }
@@ -67,6 +73,7 @@
     border-radius: 3px;
     transition: all 0.3s;
 }
+
 /* end */
 
 /* body */
@@ -80,7 +87,7 @@
     align-items: center;
     flex-direction: column;
     background-color: #000000;
-}           
+}
 
 .contact .content {
     max-width: 800px;
@@ -131,7 +138,8 @@
     align-items: center;
     transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
-.container .contactInfo .box .icon:hover{
+
+.container .contactInfo .box .icon:hover {
     transform: scale(1.2);
     box-shadow: 0 0 20px rgba(195, 190, 180, 1.1);
 }
@@ -179,11 +187,13 @@
 .container .contactInfo .box .text h3 {
     padding: 15px 0;
     font-weight: 500;
+    text-decoration: underline;
+    text-decoration: none;
     color: rgb(255, 255, 255);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.container .contactInfo .box .text h3:hover{
+.container .contactInfo .box .text h3:hover {
     transform: scale(1.2);
     color: #C4BEB4;
 }
@@ -204,13 +214,13 @@
     width: 40%;
     background: repeating-conic-gradient(from var(--a),
             #C4BEB4 0%, #C4BEB4 10%, transparent 10%, transparent 50%);
-   
+
     padding: 60px;
     border-radius: 20px;
     transition: 0.5s;
 }
 
-.container .contactForm:hover{
+.container .contactForm:hover {
     transform: translateY(-10px);
     box-shadow: 0px 0px 20px rgb(255, 255, 255);
     background-color: #010101;
@@ -222,7 +232,7 @@
     inset: 0;
     background: repeating-conic-gradient(from var(--a),
             #C4BEB4 0%, #C4BEB4 10%, transparent 10%, transparent 50%);
-    
+
     border-radius: 20px;
 
 }
@@ -232,7 +242,7 @@
     content: '';
     position: absolute;
     inset: 2px;
-    border:20px solid #222;
+    border: 20px solid #222;
     background: #C4BEB4;
     border-radius: 20px;
 }
@@ -253,12 +263,12 @@
     }
 }
 
-    .container .contactForm h1 {
-        margin-left: 65px;
-        margin-bottom: -34px;
-    font-size: 1.5em;
-    color: #080808 ;
-    }
+.container .contactForm h3{
+    margin-left: 65px;
+    margin-bottom: -34px;
+    color: #080808;
+}
+
 .container .contactForm form {
     position: relative;
     z-index: 10;
@@ -321,12 +331,13 @@
 
 .social-links {
     z-index: 1000;
+
 }
 
 /* footer */
 
 footer {
-    background:  #C4BEB4;
+    background: #C4BEB4;
     padding: 20px 0;
     text-align: center;
     margin-block-end: -20px;
