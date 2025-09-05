@@ -169,7 +169,7 @@ a{
 
 .container .contactInfo .box .icon i {
     position: relative;
-    z-index: 1000;
+    z-index: 2;
     color: #333;
     font-size: 1.25em;
 }
@@ -405,7 +405,7 @@ footer {
 @media (max-width: 768px) {
     .nav-links {
         position: absolute;
-        top: 56px;
+        top: 93px;
         right: 0;
         background-color: #222;
         width: 100%;
@@ -413,6 +413,7 @@ footer {
         align-items: center;
         max-height: 0;
         overflow: hidden;
+        z-index: 3;
     }
 
     .nav-links.open {
@@ -446,13 +447,27 @@ footer {
     content: '';
 }
 
+.dropdown-toggle {
+    position: relative;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
 .dropdown-menu {
     display: none;
     position: absolute;
     background-color: #222;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-top: 5px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     top: 100%;
